@@ -32,4 +32,18 @@ Struktura: `scenes/` — sceny 3D, `scripts/` — logika gry, `assets/` — zaso
 
 Test startu: `Godot_v4.7.2-stable_win64_console.exe --headless --path . --script tests/startup_test.gd`.
 
+## Wejście i eksport Windows
+
+Input Map definiuje fizyczne klawisze WASD jako `move_forward`, `move_backward`, `move_left`, `move_right` oraz Escape jako `pause`. Obsługa ruchu, myszy i pauzy zostanie dodana w kolejnych zadaniach; samo mapowanie nie zmienia statycznej sceny.
+
+Zainstaluj szablony eksportu **4.7.2 stable** w Godot (Editor → Manage Export Templates). W katalogu projektu utwórz `builds/windows`, a następnie wykonaj:
+
+```powershell
+Godot_v4.7.2-stable_win64_console.exe --headless --path . --export-release "Windows Desktop"
+```
+
+Wynik: `builds/windows/ApartmentFPP.exe`, Windows x64 z zasobami osadzonymi w EXE, bez podpisu cyfrowego. Działa bez edytora. Katalog `builds/` jest ignorowany przez Git.
+
+Test konfiguracji: `Godot_v4.7.2-stable_win64_console.exe --headless --path . --script tests/input_export_test.gd`.
+
 Weryfikacja importu: `Godot_v4.7.2-stable_win64_console.exe --headless --editor --path . --import`.
