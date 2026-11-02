@@ -26,7 +26,7 @@ Plan pracy: [docs/BACKLOG.md](docs/BACKLOG.md).
 
 Pobierz Godot 4.7.2 stable dla Windows x64 z [oficjalnego archiwum](https://godotengine.org/download/archive/4.7.2-stable/), rozpakuj i zaimportuj `project.godot` w menedżerze projektów. Plik `.godot-version` dokumentuje wymaganą wersję; edytor nie wymusza jej automatycznie.
 
-Projekt używa Forward+. Uruchom F5 dla projektu: zobaczysz podłogę, sześcian referencyjny i nakładkę tytułową z perspektywy postaci. Postać ma kapsułę wysokości 1,8 m (promień 0,3 m), grawitację i kamerę na wysokości 1,65 m. Podłoga zatrzymuje opadanie. Chodzenie i rozglądanie powstaną w T05, obsługa kursora i fokusu w T06.
+Projekt używa Forward+. Uruchom F5 dla projektu: zobaczysz podłogę, sześcian referencyjny i nakładkę tytułową z perspektywy postaci. Postać ma kapsułę wysokości 1,8 m (promień 0,3 m), grawitację i kamerę na wysokości 1,65 m. Podłoga zatrzymuje opadanie. Kliknij w okno, aby włączyć sterowanie: WASD porusza postacią, mysz obraca kamerę, Escape uwalnia kursor. Prędkość wynosi 3,5 m/s, a pionowy obrót jest ograniczony do ±85°. Po spadnięciu z platformy postać wraca na start. T06 dopracuje obsługę fokusu.
 
 Scena `scenes/player.tscn` jest wielokrotnego użytku; jej początek układu współrzędnych znajduje się przy stopach. Test fizyki: `Godot_v4.7.2-stable_win64_console.exe --headless --path . --script tests/player_test.gd`.
 
@@ -36,7 +36,7 @@ Test startu: `Godot_v4.7.2-stable_win64_console.exe --headless --path . --script
 
 ## Wejście i eksport Windows
 
-Input Map definiuje fizyczne klawisze WASD jako `move_forward`, `move_backward`, `move_left`, `move_right` oraz Escape jako `pause`. Obsługa ruchu, myszy i pauzy zostanie dodana w kolejnych zadaniach; samo mapowanie nie zmienia statycznej sceny.
+Input Map definiuje fizyczne klawisze WASD jako `move_forward`, `move_backward`, `move_left`, `move_right` oraz Escape jako `pause`. Ruch i mysz działają po kliknięciu w okno. Escape zwalnia sterowanie; pełne menu pauzy powstanie w T16.
 
 Zainstaluj szablony eksportu **4.7.2 stable** w Godot (Editor → Manage Export Templates). W katalogu projektu utwórz `builds/windows`, a następnie wykonaj:
 
