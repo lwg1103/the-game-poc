@@ -1,0 +1,290 @@
+[gd_scene load_steps=33 format=3]
+
+[sub_resource type="StandardMaterial3D" id="wall"]
+albedo_color = Color(0.76, 0.74, 0.68, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="living"]
+albedo_color = Color(0.42, 0.32, 0.23, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="bed"]
+albedo_color = Color(0.33, 0.4, 0.42, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="bath"]
+albedo_color = Color(0.42, 0.55, 0.57, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="hall"]
+albedo_color = Color(0.53, 0.49, 0.41, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="furniture"]
+albedo_color = Color(0.28, 0.34, 0.37, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="white"]
+albedo_color = Color(0.82, 0.82, 0.78, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="box1"]
+material = SubResource("living")
+size = Vector3(5, 0.2, 8)
+
+[sub_resource type="BoxMesh" id="box2"]
+material = SubResource("hall")
+size = Vector3(1.6, 0.2, 8)
+
+[sub_resource type="BoxMesh" id="box3"]
+material = SubResource("bed")
+size = Vector3(3.4, 0.2, 4)
+
+[sub_resource type="BoxMesh" id="box4"]
+material = SubResource("bath")
+size = Vector3(3.4, 0.2, 4)
+
+[sub_resource type="BoxMesh" id="box5"]
+material = SubResource("wall")
+size = Vector3(10.2, 2.8, 0.2)
+
+[sub_resource type="BoxMesh" id="box6"]
+material = SubResource("wall")
+size = Vector3(10.2, 2.8, 0.2)
+
+[sub_resource type="BoxMesh" id="box7"]
+material = SubResource("wall")
+size = Vector3(0.2, 2.8, 8)
+
+[sub_resource type="BoxMesh" id="box8"]
+material = SubResource("wall")
+size = Vector3(0.2, 2.8, 8)
+
+[sub_resource type="BoxMesh" id="box9"]
+material = SubResource("wall")
+size = Vector3(3.4, 2.8, 0.15)
+
+[sub_resource type="BoxMesh" id="box10"]
+material = SubResource("wall")
+size = Vector3(0.15, 2.8, 4.3)
+
+[sub_resource type="BoxMesh" id="box11"]
+material = SubResource("wall")
+size = Vector3(0.15, 2.8, 2.3)
+
+[sub_resource type="BoxMesh" id="box12"]
+material = SubResource("wall")
+size = Vector3(0.15, 2.8, 1.4)
+
+[sub_resource type="BoxMesh" id="box13"]
+material = SubResource("wall")
+size = Vector3(0.15, 2.8, 2.8)
+
+[sub_resource type="BoxMesh" id="box14"]
+material = SubResource("wall")
+size = Vector3(0.15, 2.8, 1.4)
+
+[sub_resource type="BoxMesh" id="box15"]
+material = SubResource("wall")
+size = Vector3(0.15, 0.6, 1.4)
+
+[sub_resource type="BoxMesh" id="box16"]
+material = SubResource("wall")
+size = Vector3(0.15, 0.6, 1.2)
+
+[sub_resource type="BoxMesh" id="box17"]
+material = SubResource("wall")
+size = Vector3(0.15, 0.6, 1.2)
+
+[sub_resource type="BoxMesh" id="box18"]
+material = SubResource("white")
+size = Vector3(10, 0.2, 8)
+
+[sub_resource type="BoxMesh" id="box19"]
+material = SubResource("white")
+size = Vector3(3, 0.9, 0.65)
+
+[sub_resource type="BoxMesh" id="box20"]
+material = SubResource("furniture")
+size = Vector3(1, 0.8, 2.4)
+
+[sub_resource type="BoxMesh" id="box21"]
+material = SubResource("white")
+size = Vector3(0.8, 0.6, 1.2)
+
+[sub_resource type="BoxMesh" id="box22"]
+material = SubResource("white")
+size = Vector3(1.6, 0.6, 2)
+
+[sub_resource type="BoxMesh" id="box23"]
+material = SubResource("white")
+size = Vector3(1.1, 0.16, 1.1)
+
+[sub_resource type="BoxMesh" id="box24"]
+material = SubResource("white")
+size = Vector3(0.6, 0.8, 1.2)
+
+[sub_resource type="BoxShape3D" id="floor_shape"]
+size = Vector3(10, 0.2, 8)
+
+[node name="Apartment" type="Node3D"]
+
+[node name="LivingKitchen" type="Node3D" parent="."]
+
+[node name="Bedroom" type="Node3D" parent="."]
+
+[node name="Bathroom" type="Node3D" parent="."]
+
+[node name="Hallway" type="Node3D" parent="."]
+
+[node name="Walls" type="Node3D" parent="."]
+
+[node name="Floor" type="MeshInstance3D" parent="LivingKitchen"]
+position = Vector3(-2.5, -0.1, 0)
+mesh = SubResource("box1")
+
+[node name="Floor" type="MeshInstance3D" parent="Hallway"]
+position = Vector3(0.8, -0.1, 0)
+mesh = SubResource("box2")
+
+[node name="Floor" type="MeshInstance3D" parent="Bedroom"]
+position = Vector3(3.3, -0.1, -2)
+mesh = SubResource("box3")
+
+[node name="Floor" type="MeshInstance3D" parent="Bathroom"]
+position = Vector3(3.3, -0.1, 2)
+mesh = SubResource("box4")
+
+[node name="North" type="MeshInstance3D" parent="Walls"]
+position = Vector3(0, 1.4, -4)
+mesh = SubResource("box5")
+
+[node name="South" type="MeshInstance3D" parent="Walls"]
+position = Vector3(0, 1.4, 4)
+mesh = SubResource("box6")
+
+[node name="West" type="MeshInstance3D" parent="Walls"]
+position = Vector3(-5, 1.4, 0)
+mesh = SubResource("box7")
+
+[node name="East" type="MeshInstance3D" parent="Walls"]
+position = Vector3(5, 1.4, 0)
+mesh = SubResource("box8")
+
+[node name="RoomDivider" type="MeshInstance3D" parent="Walls"]
+position = Vector3(3.3, 1.4, 0)
+mesh = SubResource("box9")
+
+[node name="Living0" type="MeshInstance3D" parent="Walls"]
+position = Vector3(0, 1.4, -1.85)
+mesh = SubResource("box10")
+
+[node name="Living1" type="MeshInstance3D" parent="Walls"]
+position = Vector3(0, 1.4, 2.85)
+mesh = SubResource("box11")
+
+[node name="Rooms0" type="MeshInstance3D" parent="Walls"]
+position = Vector3(1.6, 1.4, -3.3)
+mesh = SubResource("box12")
+
+[node name="Rooms1" type="MeshInstance3D" parent="Walls"]
+position = Vector3(1.6, 1.4, 0)
+mesh = SubResource("box13")
+
+[node name="Rooms2" type="MeshInstance3D" parent="Walls"]
+position = Vector3(1.6, 1.4, 3.3)
+mesh = SubResource("box14")
+
+[node name="LivingLintel" type="MeshInstance3D" parent="Walls"]
+position = Vector3(0, 2.5, 1)
+mesh = SubResource("box15")
+
+[node name="BedroomLintel" type="MeshInstance3D" parent="Walls"]
+position = Vector3(1.6, 2.5, -2)
+mesh = SubResource("box16")
+
+[node name="BathroomLintel" type="MeshInstance3D" parent="Walls"]
+position = Vector3(1.6, 2.5, 2)
+mesh = SubResource("box17")
+
+[node name="Ceiling" type="MeshInstance3D" parent="Walls"]
+position = Vector3(0, 2.9, 0)
+mesh = SubResource("box18")
+
+[node name="KitchenCounter" type="MeshInstance3D" parent="LivingKitchen"]
+position = Vector3(-3.2, 0.45, -3.5)
+mesh = SubResource("box19")
+
+[node name="Sofa" type="MeshInstance3D" parent="LivingKitchen"]
+position = Vector3(-4.2, 0.4, 1)
+mesh = SubResource("box20")
+
+[node name="Table" type="MeshInstance3D" parent="LivingKitchen"]
+position = Vector3(-2.7, 0.3, 1)
+mesh = SubResource("box21")
+
+[node name="Bed" type="MeshInstance3D" parent="Bedroom"]
+position = Vector3(3.6, 0.3, -2.6)
+mesh = SubResource("box22")
+
+[node name="Shower" type="MeshInstance3D" parent="Bathroom"]
+position = Vector3(4.3, 0.08, 3)
+mesh = SubResource("box23")
+
+[node name="Vanity" type="MeshInstance3D" parent="Bathroom"]
+position = Vector3(4.55, 0.4, 1)
+mesh = SubResource("box24")
+
+[node name="FloorBody" type="StaticBody3D" parent="."]
+position = Vector3(0, -0.1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FloorBody"]
+shape = SubResource("floor_shape")
+
+[node name="RoomLabel" type="Label3D" parent="LivingKitchen"]
+position = Vector3(-2.5, 2.3, 0)
+billboard = 1
+font_size = 48
+pixel_size = 0.005
+text = "LIVING + KITCHEN"
+
+[node name="PreviewLight" type="OmniLight3D" parent="LivingKitchen"]
+position = Vector3(-2.5, 2.45, 0)
+light_energy = 1.2
+omni_range = 6.0
+
+[node name="RoomLabel" type="Label3D" parent="Bedroom"]
+position = Vector3(3.3, 2.3, -2)
+billboard = 1
+font_size = 48
+pixel_size = 0.005
+text = "BEDROOM"
+
+[node name="PreviewLight" type="OmniLight3D" parent="Bedroom"]
+position = Vector3(3.3, 2.45, -2)
+light_energy = 1.2
+omni_range = 6.0
+
+[node name="RoomLabel" type="Label3D" parent="Bathroom"]
+position = Vector3(3.3, 2.3, 2)
+billboard = 1
+font_size = 48
+pixel_size = 0.005
+text = "BATHROOM"
+
+[node name="PreviewLight" type="OmniLight3D" parent="Bathroom"]
+position = Vector3(3.3, 2.45, 2)
+light_energy = 1.2
+omni_range = 6.0
+
+[node name="RoomLabel" type="Label3D" parent="Hallway"]
+position = Vector3(0.8, 2.3, 0)
+billboard = 1
+font_size = 48
+pixel_size = 0.005
+text = "HALLWAY"
+
+[node name="PreviewLight" type="OmniLight3D" parent="Hallway"]
+position = Vector3(0.8, 2.45, 0)
+light_energy = 1.2
+omni_range = 6.0
