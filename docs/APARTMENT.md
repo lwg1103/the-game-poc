@@ -23,4 +23,4 @@ Player starts at (0.8, 0.05, 3), looking north (-Z). Living-room opening: 1.4 m 
                  SOUTH (+Z)
 ```
 
-Coloured floors, labels and primitive furniture communicate scale and function. Preview lights are temporary. Only the floor has physics collision in T07; walls and furniture remain visual blockout. T08 adds wall collisions and checks clearance/spawn, T09 verifies full traversal, T10–T11 replace placeholders with finished assets.
+Coloured floors, labels and primitive furniture communicate scale and function. Preview lights are temporary. T08 adds matching box colliders to all walls, lintels and ceiling; the floor collider is retained. Capsule sweeps verify all three doorways and a clear spawn. Hallway clear width is 1.45 m; doorways are 1.2/1.4 m wide and 2.2 m high for a 0.6 m wide, 1.8 m tall player. Furniture remains visual blockout until T11. T09 verifies full traversal and corners, T10–T11 replace placeholders with finished assets.

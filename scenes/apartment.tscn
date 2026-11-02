@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3]
+[gd_scene load_steps=47 format=3]
 
 [sub_resource type="StandardMaterial3D" id="wall"]
 albedo_color = Color(0.76, 0.74, 0.68, 1)
@@ -125,6 +125,48 @@ material = SubResource("white")
 size = Vector3(0.6, 0.8, 1.2)
 
 [sub_resource type="BoxShape3D" id="floor_shape"]
+size = Vector3(10, 0.2, 8)
+
+[sub_resource type="BoxShape3D" id="collision_North"]
+size = Vector3(10.2, 2.8, 0.2)
+
+[sub_resource type="BoxShape3D" id="collision_South"]
+size = Vector3(10.2, 2.8, 0.2)
+
+[sub_resource type="BoxShape3D" id="collision_West"]
+size = Vector3(0.2, 2.8, 8)
+
+[sub_resource type="BoxShape3D" id="collision_East"]
+size = Vector3(0.2, 2.8, 8)
+
+[sub_resource type="BoxShape3D" id="collision_RoomDivider"]
+size = Vector3(3.4, 2.8, 0.15)
+
+[sub_resource type="BoxShape3D" id="collision_Living0"]
+size = Vector3(0.15, 2.8, 4.3)
+
+[sub_resource type="BoxShape3D" id="collision_Living1"]
+size = Vector3(0.15, 2.8, 2.3)
+
+[sub_resource type="BoxShape3D" id="collision_Rooms0"]
+size = Vector3(0.15, 2.8, 1.4)
+
+[sub_resource type="BoxShape3D" id="collision_Rooms1"]
+size = Vector3(0.15, 2.8, 2.8)
+
+[sub_resource type="BoxShape3D" id="collision_Rooms2"]
+size = Vector3(0.15, 2.8, 1.4)
+
+[sub_resource type="BoxShape3D" id="collision_LivingLintel"]
+size = Vector3(0.15, 0.6, 1.4)
+
+[sub_resource type="BoxShape3D" id="collision_BedroomLintel"]
+size = Vector3(0.15, 0.6, 1.2)
+
+[sub_resource type="BoxShape3D" id="collision_BathroomLintel"]
+size = Vector3(0.15, 0.6, 1.2)
+
+[sub_resource type="BoxShape3D" id="collision_Ceiling"]
 size = Vector3(10, 0.2, 8)
 
 [node name="Apartment" type="Node3D"]
@@ -288,3 +330,73 @@ text = "HALLWAY"
 position = Vector3(0.8, 2.45, 0)
 light_energy = 1.2
 omni_range = 6.0
+
+[node name="Body" type="StaticBody3D" parent="Walls/North"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/North/Body"]
+shape = SubResource("collision_North")
+
+[node name="Body" type="StaticBody3D" parent="Walls/South"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/South/Body"]
+shape = SubResource("collision_South")
+
+[node name="Body" type="StaticBody3D" parent="Walls/West"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/West/Body"]
+shape = SubResource("collision_West")
+
+[node name="Body" type="StaticBody3D" parent="Walls/East"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/East/Body"]
+shape = SubResource("collision_East")
+
+[node name="Body" type="StaticBody3D" parent="Walls/RoomDivider"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/RoomDivider/Body"]
+shape = SubResource("collision_RoomDivider")
+
+[node name="Body" type="StaticBody3D" parent="Walls/Living0"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/Living0/Body"]
+shape = SubResource("collision_Living0")
+
+[node name="Body" type="StaticBody3D" parent="Walls/Living1"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/Living1/Body"]
+shape = SubResource("collision_Living1")
+
+[node name="Body" type="StaticBody3D" parent="Walls/Rooms0"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/Rooms0/Body"]
+shape = SubResource("collision_Rooms0")
+
+[node name="Body" type="StaticBody3D" parent="Walls/Rooms1"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/Rooms1/Body"]
+shape = SubResource("collision_Rooms1")
+
+[node name="Body" type="StaticBody3D" parent="Walls/Rooms2"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/Rooms2/Body"]
+shape = SubResource("collision_Rooms2")
+
+[node name="Body" type="StaticBody3D" parent="Walls/LivingLintel"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/LivingLintel/Body"]
+shape = SubResource("collision_LivingLintel")
+
+[node name="Body" type="StaticBody3D" parent="Walls/BedroomLintel"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/BedroomLintel/Body"]
+shape = SubResource("collision_BedroomLintel")
+
+[node name="Body" type="StaticBody3D" parent="Walls/BathroomLintel"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/BathroomLintel/Body"]
+shape = SubResource("collision_BathroomLintel")
+
+[node name="Body" type="StaticBody3D" parent="Walls/Ceiling"]
+
+[node name="Shape" type="CollisionShape3D" parent="Walls/Ceiling/Body"]
+shape = SubResource("collision_Ceiling")
