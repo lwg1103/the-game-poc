@@ -1,6 +1,10 @@
-[gd_scene load_steps=6 format=3]
+[gd_scene load_steps=8 format=3]
 
 [ext_resource type="PackedScene" path="res://ui/startup_overlay.tscn" id="1_overlay"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="2_player"]
+
+[sub_resource type="BoxShape3D" id="Shape_floor"]
+size = Vector3(10, 0.2, 10)
 
 [sub_resource type="Environment" id="Environment_main"]
 background_mode = 1
@@ -30,6 +34,12 @@ environment = SubResource("Environment_main")
 [node name="Floor" type="MeshInstance3D" parent="StartupPreview"]
 mesh = SubResource("Mesh_floor")
 
+[node name="FloorBody" type="StaticBody3D" parent="StartupPreview"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StartupPreview/FloorBody"]
+position = Vector3(0, -0.1, 0)
+shape = SubResource("Shape_floor")
+
 [node name="ScaleMarker" type="MeshInstance3D" parent="StartupPreview"]
 position = Vector3(0, 0.5, 0)
 mesh = SubResource("Mesh_marker")
@@ -38,9 +48,7 @@ mesh = SubResource("Mesh_marker")
 rotation_degrees = Vector3(-50, -30, 0)
 shadow_enabled = true
 
-[node name="PreviewCamera" type="Camera3D" parent="."]
-position = Vector3(0, 2, 5)
-rotation_degrees = Vector3(-12, 0, 0)
-current = true
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector3(0, 0.05, 3)
 
 [node name="StartupOverlay" parent="." instance=ExtResource("1_overlay")]

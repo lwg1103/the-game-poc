@@ -26,7 +26,9 @@ Plan pracy: [docs/BACKLOG.md](docs/BACKLOG.md).
 
 Pobierz Godot 4.7.2 stable dla Windows x64 z [oficjalnego archiwum](https://godotengine.org/download/archive/4.7.2-stable/), rozpakuj i zaimportuj `project.godot` w menedżerze projektów. Plik `.godot-version` dokumentuje wymaganą wersję; edytor nie wymusza jej automatycznie.
 
-Projekt używa Forward+. Uruchom F6 dla otwartej sceny lub F5 dla projektu: zobaczysz podłogę, sześcian referencyjny i nakładkę tytułową. Kamera jest statyczna; sterowanie powstanie w T04–T06.
+Projekt używa Forward+. Uruchom F5 dla projektu: zobaczysz podłogę, sześcian referencyjny i nakładkę tytułową z perspektywy postaci. Postać ma kapsułę wysokości 1,8 m (promień 0,3 m), grawitację i kamerę na wysokości 1,65 m. Podłoga zatrzymuje opadanie. Chodzenie i rozglądanie powstaną w T05, obsługa kursora i fokusu w T06.
+
+Scena `scenes/player.tscn` jest wielokrotnego użytku; jej początek układu współrzędnych znajduje się przy stopach. Test fizyki: `Godot_v4.7.2-stable_win64_console.exe --headless --path . --script tests/player_test.gd`.
 
 Struktura: `scenes/` — sceny 3D, `scripts/` — logika gry, `assets/` — zasoby, `ui/` — interfejs, `tests/` — testy uruchamiane przez silnik.
 
