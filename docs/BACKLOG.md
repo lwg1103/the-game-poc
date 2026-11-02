@@ -1,6 +1,6 @@
 # Backlog dema FPP
 
-T01 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
+T01 i T02 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
 
 ## M1 — Grywalny prototyp
 
@@ -8,7 +8,7 @@ T01 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzo
 Jako gracz chcę uruchomić demo i znaleźć się w mieszkaniu.
 
 - [x] T01: Przypiąć stabilną wersję Godot 4 i utworzyć projekt oraz reguły ignorowania plików generowanych.
-- [ ] T02: Utworzyć katalogi scen, skryptów, zasobów i UI oraz scenę startową.
+- [x] T02: Utworzyć katalogi scen, skryptów, zasobów i UI oraz scenę startową.
 - [ ] T03: Skonfigurować akcje wejścia i eksport Windows x64.
 
 Odbiór: build uruchamia się bez edytora i pokazuje scenę startową.

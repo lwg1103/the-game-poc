@@ -26,6 +26,10 @@ Plan pracy: [docs/BACKLOG.md](docs/BACKLOG.md).
 
 Pobierz Godot 4.7.2 stable dla Windows x64 z [oficjalnego archiwum](https://godotengine.org/download/archive/4.7.2-stable/), rozpakuj i zaimportuj `project.godot` w menedżerze projektów. Plik `.godot-version` dokumentuje wymaganą wersję; edytor nie wymusza jej automatycznie.
 
-Projekt używa Forward+. Scena startowa powstanie w T02, więc na etapie T01 projekt otwieramy w edytorze, bez uruchamiania gry.
+Projekt używa Forward+. Uruchom F6 dla otwartej sceny lub F5 dla projektu: zobaczysz podłogę, sześcian referencyjny i nakładkę tytułową. Kamera jest statyczna; sterowanie powstanie w T04–T06.
+
+Struktura: `scenes/` — sceny 3D, `scripts/` — logika gry, `assets/` — zasoby, `ui/` — interfejs, `tests/` — testy uruchamiane przez silnik.
+
+Test startu: `Godot_v4.7.2-stable_win64_console.exe --headless --path . --script tests/startup_test.gd`.
 
 Weryfikacja importu: `Godot_v4.7.2-stable_win64_console.exe --headless --editor --path . --import`.
