@@ -26,7 +26,7 @@ Plan pracy: [docs/BACKLOG.md](docs/BACKLOG.md).
 
 Pobierz Godot 4.7.2 stable dla Windows x64 z [oficjalnego archiwum](https://godotengine.org/download/archive/4.7.2-stable/), rozpakuj i zaimportuj `project.godot` w menedżerze projektów. Plik `.godot-version` dokumentuje wymaganą wersję; edytor nie wymusza jej automatycznie.
 
-Projekt używa Forward+. Uruchom F5 dla projektu: zobaczysz podłogę, sześcian referencyjny i nakładkę tytułową z perspektywy postaci. Postać ma kapsułę wysokości 1,8 m (promień 0,3 m), grawitację i kamerę na wysokości 1,65 m. Podłoga zatrzymuje opadanie. Kliknij w okno, aby włączyć sterowanie: WASD porusza postacią, mysz obraca kamerę, Escape uwalnia kursor. Prędkość wynosi 3,5 m/s, a pionowy obrót jest ograniczony do ±85°. Po spadnięciu z platformy postać wraca na start. T06 dopracuje obsługę fokusu.
+Projekt używa Forward+. Uruchom F5 dla projektu: zobaczysz podłogę, sześcian referencyjny i nakładkę tytułową z perspektywy postaci. Postać ma kapsułę wysokości 1,8 m (promień 0,3 m), grawitację i kamerę na wysokości 1,65 m. Podłoga zatrzymuje opadanie. Kliknij w okno, aby włączyć sterowanie: WASD porusza postacią, mysz obraca kamerę, Escape uwalnia kursor. Prędkość wynosi 3,5 m/s, a pionowy obrót jest ograniczony do ±85°. Po spadnięciu z platformy postać wraca na start. Alt+Tab uwalnia kursor i zatrzymuje ruch poziomy. Po powrocie kliknij, aby wznowić sterowanie; pierwszy ruch myszy po przechwyceniu jest pomijany, aby uniknąć skoku kamery.
 
 Scena `scenes/player.tscn` jest wielokrotnego użytku; jej początek układu współrzędnych znajduje się przy stopach. Test fizyki: `Godot_v4.7.2-stable_win64_console.exe --headless --path . --script tests/player_test.gd`.
 
