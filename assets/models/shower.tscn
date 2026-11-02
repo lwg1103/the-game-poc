@@ -1,0 +1,55 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Material" path="res://assets/materials/oak.tres" id="oak"]
+
+[ext_resource type="Material" path="res://assets/materials/linen.tres" id="linen"]
+
+[ext_resource type="Material" path="res://assets/materials/sage.tres" id="sage"]
+
+[ext_resource type="Material" path="res://assets/materials/ceramic.tres" id="ceramic"]
+
+[ext_resource type="Material" path="res://assets/materials/metal.tres" id="metal"]
+
+[ext_resource type="Material" path="res://assets/materials/stone.tres" id="stone"]
+
+[sub_resource type="BoxMesh" id="m0"]
+size = Vector3(1.1, 0.1, 1.1)
+material = ExtResource("ceramic")
+
+[sub_resource type="BoxMesh" id="m1"]
+size = Vector3(0.12, 0.01, 0.12)
+material = ExtResource("metal")
+
+[sub_resource type="BoxMesh" id="m2"]
+size = Vector3(1.1, 2, 0.04)
+material = ExtResource("stone")
+
+[sub_resource type="BoxMesh" id="m3"]
+size = Vector3(0.035, 1.1, 0.035)
+material = ExtResource("metal")
+
+[sub_resource type="BoxMesh" id="m4"]
+size = Vector3(0.2, 0.04, 0.26)
+material = ExtResource("metal")
+
+[node name="shower" type="Node3D"]
+
+[node name="Tray" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.05, 0)
+mesh = SubResource("m0")
+
+[node name="Drain" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.105, 0)
+mesh = SubResource("m1")
+
+[node name="Back" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1, 0.53)
+mesh = SubResource("m2")
+
+[node name="Riser" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.35, 0.48)
+mesh = SubResource("m3")
+
+[node name="Head" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.88, 0.36)
+mesh = SubResource("m4")

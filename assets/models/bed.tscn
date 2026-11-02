@@ -1,0 +1,95 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Material" path="res://assets/materials/oak.tres" id="oak"]
+
+[ext_resource type="Material" path="res://assets/materials/linen.tres" id="linen"]
+
+[ext_resource type="Material" path="res://assets/materials/sage.tres" id="sage"]
+
+[ext_resource type="Material" path="res://assets/materials/ceramic.tres" id="ceramic"]
+
+[ext_resource type="Material" path="res://assets/materials/metal.tres" id="metal"]
+
+[ext_resource type="Material" path="res://assets/materials/stone.tres" id="stone"]
+
+[sub_resource type="BoxMesh" id="m0"]
+size = Vector3(1.6, 0.3, 2)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m1"]
+size = Vector3(1.52, 0.22, 1.9)
+material = ExtResource("linen")
+
+[sub_resource type="BoxMesh" id="m2"]
+size = Vector3(1.6, 1, 0.08)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m3"]
+size = Vector3(1.53, 0.08, 1.25)
+material = ExtResource("sage")
+
+[sub_resource type="BoxMesh" id="m4"]
+size = Vector3(0.6, 0.16, 0.4)
+material = ExtResource("ceramic")
+
+[sub_resource type="BoxMesh" id="m5"]
+size = Vector3(0.6, 0.16, 0.4)
+material = ExtResource("ceramic")
+
+[sub_resource type="BoxMesh" id="m6"]
+size = Vector3(0.06, 0.1, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m7"]
+size = Vector3(0.06, 0.1, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m8"]
+size = Vector3(0.06, 0.1, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m9"]
+size = Vector3(0.06, 0.1, 0.06)
+material = ExtResource("oak")
+
+[node name="bed" type="Node3D"]
+
+[node name="Frame" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.24, 0)
+mesh = SubResource("m0")
+
+[node name="Mattress" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.47, 0)
+mesh = SubResource("m1")
+
+[node name="Headboard" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.65, -0.96)
+mesh = SubResource("m2")
+
+[node name="Blanket" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.6, 0.3)
+mesh = SubResource("m3")
+
+[node name="Pillow-0.4" type="MeshInstance3D" parent="."]
+position = Vector3(-0.4, 0.63, -0.6)
+mesh = SubResource("m4")
+
+[node name="Pillow0.4" type="MeshInstance3D" parent="."]
+position = Vector3(0.4, 0.63, -0.6)
+mesh = SubResource("m5")
+
+[node name="Leg-0.65-0.8" type="MeshInstance3D" parent="."]
+position = Vector3(-0.65, 0.05, -0.8)
+mesh = SubResource("m6")
+
+[node name="Leg-0.650.8" type="MeshInstance3D" parent="."]
+position = Vector3(-0.65, 0.05, 0.8)
+mesh = SubResource("m7")
+
+[node name="Leg0.65-0.8" type="MeshInstance3D" parent="."]
+position = Vector3(0.65, 0.05, -0.8)
+mesh = SubResource("m8")
+
+[node name="Leg0.650.8" type="MeshInstance3D" parent="."]
+position = Vector3(0.65, 0.05, 0.8)
+mesh = SubResource("m9")

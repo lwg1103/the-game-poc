@@ -1,0 +1,103 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Material" path="res://assets/materials/oak.tres" id="oak"]
+
+[ext_resource type="Material" path="res://assets/materials/linen.tres" id="linen"]
+
+[ext_resource type="Material" path="res://assets/materials/sage.tres" id="sage"]
+
+[ext_resource type="Material" path="res://assets/materials/ceramic.tres" id="ceramic"]
+
+[ext_resource type="Material" path="res://assets/materials/metal.tres" id="metal"]
+
+[ext_resource type="Material" path="res://assets/materials/stone.tres" id="stone"]
+
+[sub_resource type="BoxMesh" id="m0"]
+size = Vector3(0.9, 0.22, 2.3)
+material = ExtResource("sage")
+
+[sub_resource type="BoxMesh" id="m1"]
+size = Vector3(0.18, 0.8, 2.3)
+material = ExtResource("sage")
+
+[sub_resource type="BoxMesh" id="m2"]
+size = Vector3(0.9, 0.55, 0.2)
+material = ExtResource("sage")
+
+[sub_resource type="BoxMesh" id="m3"]
+size = Vector3(0.9, 0.55, 0.2)
+material = ExtResource("sage")
+
+[sub_resource type="BoxMesh" id="m4"]
+size = Vector3(0.65, 0.2, 0.6)
+material = ExtResource("linen")
+
+[sub_resource type="BoxMesh" id="m5"]
+size = Vector3(0.65, 0.2, 0.6)
+material = ExtResource("linen")
+
+[sub_resource type="BoxMesh" id="m6"]
+size = Vector3(0.65, 0.2, 0.6)
+material = ExtResource("linen")
+
+[sub_resource type="BoxMesh" id="m7"]
+size = Vector3(0.06, 0.16, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m8"]
+size = Vector3(0.06, 0.16, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m9"]
+size = Vector3(0.06, 0.16, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m10"]
+size = Vector3(0.06, 0.16, 0.06)
+material = ExtResource("oak")
+
+[node name="sofa" type="Node3D"]
+
+[node name="Base" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.25, 0)
+mesh = SubResource("m0")
+
+[node name="Back" type="MeshInstance3D" parent="."]
+position = Vector3(-0.38, 0.65, 0)
+mesh = SubResource("m1")
+
+[node name="Arm-1" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.55, -1)
+mesh = SubResource("m2")
+
+[node name="Arm1" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.55, 1)
+mesh = SubResource("m3")
+
+[node name="Cushion-0.64" type="MeshInstance3D" parent="."]
+position = Vector3(0.06, 0.46, -0.64)
+mesh = SubResource("m4")
+
+[node name="Cushion0" type="MeshInstance3D" parent="."]
+position = Vector3(0.06, 0.46, 0)
+mesh = SubResource("m5")
+
+[node name="Cushion0.64" type="MeshInstance3D" parent="."]
+position = Vector3(0.06, 0.46, 0.64)
+mesh = SubResource("m6")
+
+[node name="Leg-0.3-0.85" type="MeshInstance3D" parent="."]
+position = Vector3(-0.3, 0.08, -0.85)
+mesh = SubResource("m7")
+
+[node name="Leg-0.30.85" type="MeshInstance3D" parent="."]
+position = Vector3(-0.3, 0.08, 0.85)
+mesh = SubResource("m8")
+
+[node name="Leg0.3-0.85" type="MeshInstance3D" parent="."]
+position = Vector3(0.3, 0.08, -0.85)
+mesh = SubResource("m9")
+
+[node name="Leg0.30.85" type="MeshInstance3D" parent="."]
+position = Vector3(0.3, 0.08, 0.85)
+mesh = SubResource("m10")

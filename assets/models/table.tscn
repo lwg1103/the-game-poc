@@ -1,0 +1,55 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Material" path="res://assets/materials/oak.tres" id="oak"]
+
+[ext_resource type="Material" path="res://assets/materials/linen.tres" id="linen"]
+
+[ext_resource type="Material" path="res://assets/materials/sage.tres" id="sage"]
+
+[ext_resource type="Material" path="res://assets/materials/ceramic.tres" id="ceramic"]
+
+[ext_resource type="Material" path="res://assets/materials/metal.tres" id="metal"]
+
+[ext_resource type="Material" path="res://assets/materials/stone.tres" id="stone"]
+
+[sub_resource type="BoxMesh" id="m0"]
+size = Vector3(0.8, 0.08, 1.2)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m1"]
+size = Vector3(0.06, 0.52, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m2"]
+size = Vector3(0.06, 0.52, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m3"]
+size = Vector3(0.06, 0.52, 0.06)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m4"]
+size = Vector3(0.06, 0.52, 0.06)
+material = ExtResource("oak")
+
+[node name="table" type="Node3D"]
+
+[node name="Top" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.56, 0)
+mesh = SubResource("m0")
+
+[node name="Leg-0.29-0.49" type="MeshInstance3D" parent="."]
+position = Vector3(-0.29, 0.26, -0.49)
+mesh = SubResource("m1")
+
+[node name="Leg-0.290.49" type="MeshInstance3D" parent="."]
+position = Vector3(-0.29, 0.26, 0.49)
+mesh = SubResource("m2")
+
+[node name="Leg0.29-0.49" type="MeshInstance3D" parent="."]
+position = Vector3(0.29, 0.26, -0.49)
+mesh = SubResource("m3")
+
+[node name="Leg0.290.49" type="MeshInstance3D" parent="."]
+position = Vector3(0.29, 0.26, 0.49)
+mesh = SubResource("m4")
