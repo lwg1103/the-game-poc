@@ -1,6 +1,6 @@
 # Backlog dema FPP
 
-T01–T03 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
+T01–T04 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
 
 ## M1 — Grywalny prototyp
 
@@ -16,7 +16,7 @@ Odbiór: build uruchamia się bez edytora i pokazuje scenę startową.
 ### US-02 — Poruszanie FPP
 Jako gracz chcę swobodnie chodzić i rozglądać się.
 
-- [ ] T04: Zbudować kontroler CharacterBody3D z kapsułą, grawitacją i kamerą na wysokości oczu.
+- [x] T04: Zbudować kontroler CharacterBody3D z kapsułą, grawitacją i kamerą na wysokości oczu.
 - [ ] T05: Dodać WASD, normalizację ruchu po przekątnej, rozglądanie myszą i ograniczenie kąta pionowego.
 - [ ] T06: Obsłużyć przechwytywanie kursora i utratę fokusu okna.
 
