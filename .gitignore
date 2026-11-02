@@ -1,0 +1,9 @@
+# Godot generated cache and local editor state.
+/.godot/
+/export_credentials.cfg
+
+# Local engine binaries and exported builds.
+/.tools/
+/builds/
+
+# Keep source import settings (*.import) and resource IDs (*.uid) tracked.
