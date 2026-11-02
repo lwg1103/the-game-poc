@@ -2,7 +2,7 @@ extends CharacterBody3D
 ## Feet are the origin; the capsule and camera are offset above them.
 
 @export var movement_speed: float = 3.5
-@export var mouse_sensitivity: float = 0.002
+@export var mouse_sensitivity: float = 0.0006
 const PITCH_LIMIT: float = deg_to_rad(85.0)
 @onready var camera: Camera3D = $Camera
 var spawn_position: Vector3
