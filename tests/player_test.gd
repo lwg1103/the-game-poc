@@ -13,9 +13,9 @@ func run_test() -> void:
 	if player == null:
 		fail("The main scene must contain a character body.")
 		return
-	player.position.y = 3.0
+	player.position.y = 0.8
 	await create_timer(0.2, true, true).timeout
-	if player.position.y >= 3.0 or player.velocity.y >= 0.0:
+	if player.position.y >= 0.8 or player.velocity.y >= 0.0:
 		fail("Gravity must move an airborne player downwards.")
 		return
 	await create_timer(1.5, true, true).timeout

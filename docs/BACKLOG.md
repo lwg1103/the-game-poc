@@ -1,6 +1,6 @@
 # Backlog dema FPP
 
-T01–T07 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
+T01–T08 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
 
 ## M1 — Grywalny prototyp
 
@@ -26,7 +26,7 @@ Odbiór: prędkość ruchu nie zależy od kierunku ani liczby klatek; kamera nie
 Jako gracz chcę przejść przez całe mieszkanie bez blokowania się.
 
 - [x] T07: Zbudować prototyp z brył w spójnej skali: salon z aneksem, sypialnia, łazienka, korytarz.
-- [ ] T08: Dodać kolizje ścian i podłóg, sprawdzić szerokość przejść i miejsce startowe.
+- [x] T08: Dodać kolizje ścian i podłóg, sprawdzić szerokość przejść i miejsce startowe.
 - [ ] T09: Przetestować pełną trasę, narożniki i kontakt kapsuły ze ścianami.
 
 Odbiór: wszystkie pomieszczenia są dostępne; brak przenikania przez ściany i wypadania poza mieszkanie.
