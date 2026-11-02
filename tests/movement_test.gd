@@ -32,6 +32,8 @@ func run_test() -> void:
 		return
 	var motion := InputEventMouseMotion.new()
 	motion.screen_relative = Vector2(100, 100000)
+	# The first event after capture is intentionally discarded.
+	player._unhandled_input(motion)
 	player._unhandled_input(motion)
 	var camera := player.get_node("Camera") as Camera3D
 	if player.rotation.y >= 0 or absf(camera.rotation.x) > deg_to_rad(85.01) or camera.rotation.x >= 0:
