@@ -13,42 +13,52 @@
 [ext_resource type="Material" path="res://assets/materials/stone.tres" id="stone"]
 
 [sub_resource type="BoxMesh" id="m0"]
+add_uv2 = true
 size = Vector3(1.6, 0.3, 2)
 material = ExtResource("oak")
 
 [sub_resource type="BoxMesh" id="m1"]
+add_uv2 = true
 size = Vector3(1.52, 0.22, 1.9)
 material = ExtResource("linen")
 
 [sub_resource type="BoxMesh" id="m2"]
+add_uv2 = true
 size = Vector3(1.6, 1, 0.08)
 material = ExtResource("oak")
 
 [sub_resource type="BoxMesh" id="m3"]
+add_uv2 = true
 size = Vector3(1.53, 0.08, 1.25)
 material = ExtResource("sage")
 
 [sub_resource type="BoxMesh" id="m4"]
+add_uv2 = true
 size = Vector3(0.6, 0.16, 0.4)
 material = ExtResource("ceramic")
 
 [sub_resource type="BoxMesh" id="m5"]
+add_uv2 = true
 size = Vector3(0.6, 0.16, 0.4)
 material = ExtResource("ceramic")
 
 [sub_resource type="BoxMesh" id="m6"]
+add_uv2 = true
 size = Vector3(0.06, 0.1, 0.06)
 material = ExtResource("oak")
 
 [sub_resource type="BoxMesh" id="m7"]
+add_uv2 = true
 size = Vector3(0.06, 0.1, 0.06)
 material = ExtResource("oak")
 
 [sub_resource type="BoxMesh" id="m8"]
+add_uv2 = true
 size = Vector3(0.06, 0.1, 0.06)
 material = ExtResource("oak")
 
 [sub_resource type="BoxMesh" id="m9"]
+add_uv2 = true
 size = Vector3(0.06, 0.1, 0.06)
 material = ExtResource("oak")
 

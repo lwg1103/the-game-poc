@@ -13,58 +13,72 @@
 [ext_resource type="Material" path="res://assets/materials/stone.tres" id="stone"]
 
 [sub_resource type="BoxMesh" id="m0"]
+add_uv2 = true
 size = Vector3(2.9, 0.16, 0.52)
 material = ExtResource("metal")
 
 [sub_resource type="BoxMesh" id="m1"]
+add_uv2 = true
 size = Vector3(3, 0.7, 0.6)
 material = ExtResource("sage")
 
 [sub_resource type="BoxMesh" id="m2"]
+add_uv2 = true
 size = Vector3(3.06, 0.08, 0.65)
 material = ExtResource("stone")
 
 [sub_resource type="BoxMesh" id="m3"]
+add_uv2 = true
 size = Vector3(0.96, 0.63, 0.035)
 material = ExtResource("linen")
 
 [sub_resource type="BoxMesh" id="m4"]
+add_uv2 = true
 size = Vector3(0.96, 0.63, 0.035)
 material = ExtResource("linen")
 
 [sub_resource type="BoxMesh" id="m5"]
+add_uv2 = true
 size = Vector3(0.96, 0.63, 0.035)
 material = ExtResource("linen")
 
 [sub_resource type="BoxMesh" id="m6"]
+add_uv2 = true
 size = Vector3(0.3, 0.025, 0.03)
 material = ExtResource("metal")
 
 [sub_resource type="BoxMesh" id="m7"]
+add_uv2 = true
 size = Vector3(0.3, 0.025, 0.03)
 material = ExtResource("metal")
 
 [sub_resource type="BoxMesh" id="m8"]
+add_uv2 = true
 size = Vector3(0.3, 0.025, 0.03)
 material = ExtResource("metal")
 
 [sub_resource type="BoxMesh" id="m9"]
+add_uv2 = true
 size = Vector3(0.65, 0.025, 0.48)
 material = ExtResource("metal")
 
 [sub_resource type="BoxMesh" id="m10"]
+add_uv2 = true
 size = Vector3(0.22, 0.01, 0.19)
 material = ExtResource("stone")
 
 [sub_resource type="BoxMesh" id="m11"]
+add_uv2 = true
 size = Vector3(0.22, 0.01, 0.19)
 material = ExtResource("stone")
 
 [sub_resource type="BoxMesh" id="m12"]
+add_uv2 = true
 size = Vector3(0.65, 0.03, 0.43)
 material = ExtResource("metal")
 
 [sub_resource type="BoxMesh" id="m13"]
+add_uv2 = true
 size = Vector3(0.035, 0.3, 0.035)
 material = ExtResource("metal")
 

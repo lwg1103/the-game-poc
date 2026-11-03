@@ -1,0 +1,9 @@
+Apartment FPP asset register
+
+Models, scenes, materials and scripts: authored for this repository; no external asset packs, textures, music or sound files were imported. Repository ownership/licensing applies; this register does not assign a new license to original project content.
+
+Engine: Godot 4.7.2 stable, MIT. Sources:
+https://github.com/godotengine/godot/blob/4.7.2-stable/LICENSE.txt
+https://github.com/godotengine/godot/blob/4.7.2-stable/COPYRIGHT.txt
+Full notices are included as GODOT_LICENSE.txt and GODOT_COPYRIGHT.txt.
+Built-in fonts and engine libraries are covered by the engine third-party notices. In-game F1 exposes the running engine's license and copyright information.
