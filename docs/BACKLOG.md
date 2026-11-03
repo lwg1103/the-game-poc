@@ -1,6 +1,6 @@
 # Backlog dema FPP
 
-T01–T11 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
+T01–T15 wykonane; T14: próbny bake LightmapGI zweryfikowany, w mieszkaniu wybrano oświetlenie dynamiczne. Wybór silnika został zatwierdzony: Godot.
 
 ## M1 — Grywalny prototyp
 
@@ -38,16 +38,16 @@ Jako gracz chcę oglądać spójne, umeblowane mieszkanie.
 
 - [x] T10: Ustalić paletę materiałów i przygotować modele o uproszczonym realizmie.
 - [x] T11: Dodać wyposażenie i uproszczone kolizje; zachować drożne przejścia.
-- [ ] T12: Zapisać źródła i licencje użytych zewnętrznych zasobów oraz wymagane informacje o licencji silnika.
+- [x] T12: Zapisać źródła i licencje użytych zewnętrznych zasobów oraz wymagane informacje o licencji silnika.
 
 Odbiór: pomieszczenia mają rozpoznawalne funkcje i spójny wygląd, wyposażenie nie blokuje zwiedzania.
 
 ### US-05 — Czytelne światło
 Jako gracz chcę widzieć wnętrze w przyjemnym, spójnym oświetleniu.
 
-- [ ] T13: Przygotować światło dzienne, lampy i ekspozycję.
-- [ ] T14: Sprawdzić LightmapGI dla statycznego wnętrza, przygotować UV2 i oświetlenie obiektów ruchomych, jeśli będą potrzebne.
-- [ ] T15: Zmierzyć koszt renderowania pierwszego umeblowanego pokoju; ograniczyć kosztowne cienie i światła.
+- [x] T13: Przygotować światło dzienne, lampy i ekspozycję.
+- [x] T14: Sprawdzić LightmapGI dla statycznego wnętrza, przygotować UV2 i oświetlenie obiektów ruchomych, jeśli będą potrzebne.
+- [x] T15: Zmierzyć koszt renderowania pierwszego umeblowanego pokoju; ograniczyć kosztowne cienie i światła.
 
 Odbiór: brak rażących przecieków światła i nieczytelnych pomieszczeń; wynik pomiaru wydajności zapisany wraz z konfiguracją sprzętu.
 

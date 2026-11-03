@@ -37,98 +37,122 @@ albedo_color = Color(0.82, 0.82, 0.78, 1)
 roughness = 0.9
 
 [sub_resource type="BoxMesh" id="box1"]
+add_uv2 = true
 material = SubResource("living")
 size = Vector3(5, 0.2, 8)
 
 [sub_resource type="BoxMesh" id="box2"]
+add_uv2 = true
 material = SubResource("hall")
 size = Vector3(1.6, 0.2, 8)
 
 [sub_resource type="BoxMesh" id="box3"]
+add_uv2 = true
 material = SubResource("bed")
 size = Vector3(3.4, 0.2, 4)
 
 [sub_resource type="BoxMesh" id="box4"]
+add_uv2 = true
 material = SubResource("bath")
 size = Vector3(3.4, 0.2, 4)
 
 [sub_resource type="BoxMesh" id="box5"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(10.2, 2.8, 0.2)
 
 [sub_resource type="BoxMesh" id="box6"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(10.2, 2.8, 0.2)
 
 [sub_resource type="BoxMesh" id="box7"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.2, 2.8, 8)
 
 [sub_resource type="BoxMesh" id="box8"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.2, 2.8, 8)
 
 [sub_resource type="BoxMesh" id="box9"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(3.4, 2.8, 0.15)
 
 [sub_resource type="BoxMesh" id="box10"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 2.8, 4.3)
 
 [sub_resource type="BoxMesh" id="box11"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 2.8, 2.3)
 
 [sub_resource type="BoxMesh" id="box12"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 2.8, 1.4)
 
 [sub_resource type="BoxMesh" id="box13"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 2.8, 2.8)
 
 [sub_resource type="BoxMesh" id="box14"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 2.8, 1.4)
 
 [sub_resource type="BoxMesh" id="box15"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 0.6, 1.4)
 
 [sub_resource type="BoxMesh" id="box16"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 0.6, 1.2)
 
 [sub_resource type="BoxMesh" id="box17"]
+add_uv2 = true
 material = SubResource("wall")
 size = Vector3(0.15, 0.6, 1.2)
 
 [sub_resource type="BoxMesh" id="box18"]
+add_uv2 = true
 material = SubResource("white")
 size = Vector3(10, 0.2, 8)
 
 [sub_resource type="BoxMesh" id="box19"]
+add_uv2 = true
 material = SubResource("white")
 size = Vector3(3, 0.9, 0.65)
 
 [sub_resource type="BoxMesh" id="box20"]
+add_uv2 = true
 material = SubResource("furniture")
 size = Vector3(1, 0.8, 2.4)
 
 [sub_resource type="BoxMesh" id="box21"]
+add_uv2 = true
 material = SubResource("white")
 size = Vector3(0.8, 0.6, 1.2)
 
 [sub_resource type="BoxMesh" id="box22"]
+add_uv2 = true
 material = SubResource("white")
 size = Vector3(1.6, 0.6, 2)
 
 [sub_resource type="BoxMesh" id="box23"]
+add_uv2 = true
 material = SubResource("white")
 size = Vector3(1.1, 0.16, 1.1)
 
 [sub_resource type="BoxMesh" id="box24"]
+add_uv2 = true
 material = SubResource("white")
 size = Vector3(0.6, 0.8, 1.2)
 
@@ -292,10 +316,14 @@ font_size = 48
 pixel_size = 0.005
 text = "LIVING + KITCHEN"
 
-[node name="PreviewLight" type="OmniLight3D" parent="LivingKitchen"]
+[node name="CeilingLight" type="SpotLight3D" parent="LivingKitchen"]
 position = Vector3(-2.5, 2.45, 0)
-light_energy = 1.2
-omni_range = 6.0
+rotation_degrees = Vector3(-90, 0, 0)
+light_color = Color(1, 0.88, 0.72, 1)
+light_energy = 2.0
+shadow_enabled = true
+spot_angle = 75.0
+spot_range = 5.5
 
 [node name="RoomLabel" type="Label3D" parent="Bedroom"]
 position = Vector3(3.3, 2.3, -2)
@@ -304,10 +332,14 @@ font_size = 48
 pixel_size = 0.005
 text = "BEDROOM"
 
-[node name="PreviewLight" type="OmniLight3D" parent="Bedroom"]
+[node name="CeilingLight" type="SpotLight3D" parent="Bedroom"]
 position = Vector3(3.3, 2.45, -2)
-light_energy = 1.2
-omni_range = 6.0
+rotation_degrees = Vector3(-90, 0, 0)
+light_color = Color(1, 0.88, 0.72, 1)
+light_energy = 2.0
+shadow_enabled = true
+spot_angle = 75.0
+spot_range = 5.5
 
 [node name="RoomLabel" type="Label3D" parent="Bathroom"]
 position = Vector3(3.3, 2.3, 2)
@@ -316,10 +348,14 @@ font_size = 48
 pixel_size = 0.005
 text = "BATHROOM"
 
-[node name="PreviewLight" type="OmniLight3D" parent="Bathroom"]
+[node name="CeilingLight" type="SpotLight3D" parent="Bathroom"]
 position = Vector3(3.3, 2.45, 2)
-light_energy = 1.2
-omni_range = 6.0
+rotation_degrees = Vector3(-90, 0, 0)
+light_color = Color(1, 0.88, 0.72, 1)
+light_energy = 2.0
+shadow_enabled = true
+spot_angle = 75.0
+spot_range = 5.5
 
 [node name="RoomLabel" type="Label3D" parent="Hallway"]
 position = Vector3(0.8, 2.3, 0)
@@ -328,10 +364,14 @@ font_size = 48
 pixel_size = 0.005
 text = "HALLWAY"
 
-[node name="PreviewLight" type="OmniLight3D" parent="Hallway"]
+[node name="CeilingLight" type="SpotLight3D" parent="Hallway"]
 position = Vector3(0.8, 2.45, 0)
-light_energy = 1.2
-omni_range = 6.0
+rotation_degrees = Vector3(-90, 0, 0)
+light_color = Color(1, 0.88, 0.72, 1)
+light_energy = 2.0
+shadow_enabled = true
+spot_angle = 75.0
+spot_range = 5.5
 
 [node name="Body" type="StaticBody3D" parent="Walls/North"]
 

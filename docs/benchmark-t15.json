@@ -1,0 +1,10 @@
+{
+	"average_fps": 601.887519260401,
+	"draw_calls": 47.0,
+	"frames": 1200,
+	"gpu": "NVIDIA GeForce RTX 3060",
+	"mean_ms": 1.66144,
+	"p99_ms": 2.394,
+	"resolution": "(1920, 1080)",
+	"worst_ms": 2.752
+}
