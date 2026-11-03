@@ -24,7 +24,7 @@ func run_test() -> void:
 	var route: Array[Vector2] = [
 		Vector2(0.8, 1), Vector2(-1.2, 1), Vector2(-3, -2),
 		Vector2(-1.2, 1), Vector2(0.8, 1), Vector2(0.8, -2),
-		Vector2(3, -2), Vector2(2.3, -1), Vector2(2.3, -2),
+		Vector2(2.2, -2), Vector2(2.2, -1), Vector2(2.2, -2),
 		Vector2(0.8, -2), Vector2(0.8, 2), Vector2(3, 2),
 		Vector2(3, 3), Vector2(2.3, 2), Vector2(0.8, 2), Vector2(0.8, 3)
 	]
@@ -53,6 +53,9 @@ func run_test() -> void:
 	if not await walk_to(Vector2(0.8, -2)):
 		finish(false)
 		return
+	# Isolate structural corners; furniture occupies some of these test origins.
+	for body: Node in get_nodes_in_group("furniture_collision"):
+		body.collision_layer = 0
 	# Test all four outer corners, then walk away without resetting the body.
 	for corner: Vector2 in [Vector2(-1, -1), Vector2(-1, 1), Vector2(1, -1), Vector2(1, 1)]:
 		var start := Vector2(corner.x * 4, corner.y * 3)

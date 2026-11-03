@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3]
+[gd_scene load_steps=19 format=3]
 
 [ext_resource type="Material" path="res://assets/materials/oak.tres" id="oak"]
 
@@ -56,6 +56,9 @@ material = ExtResource("oak")
 size = Vector3(0.06, 0.16, 0.06)
 material = ExtResource("oak")
 
+[sub_resource type="BoxShape3D" id="body_shape"]
+size = Vector3(0.9, 1.05, 2.3)
+
 [node name="sofa" type="Node3D"]
 
 [node name="Base" type="MeshInstance3D" parent="."]
@@ -101,3 +104,9 @@ mesh = SubResource("m9")
 [node name="Leg0.30.85" type="MeshInstance3D" parent="."]
 position = Vector3(0.3, 0.08, 0.85)
 mesh = SubResource("m10")
+
+[node name="Body" type="StaticBody3D" parent="." groups=["furniture_collision"]]
+
+[node name="Shape" type="CollisionShape3D" parent="Body"]
+position = Vector3(0, 0.525, 0)
+shape = SubResource("body_shape")

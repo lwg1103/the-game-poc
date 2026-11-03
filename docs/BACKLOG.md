@@ -1,6 +1,6 @@
 # Backlog dema FPP
 
-T01–T10 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
+T01–T11 wykonane; pozostałe zadania do wykonania. Wybór silnika został zatwierdzony: Godot.
 
 ## M1 — Grywalny prototyp
 
@@ -37,7 +37,7 @@ Odbiór: wszystkie pomieszczenia są dostępne; brak przenikania przez ściany i
 Jako gracz chcę oglądać spójne, umeblowane mieszkanie.
 
 - [x] T10: Ustalić paletę materiałów i przygotować modele o uproszczonym realizmie.
-- [ ] T11: Dodać wyposażenie i uproszczone kolizje; zachować drożne przejścia.
+- [x] T11: Dodać wyposażenie i uproszczone kolizje; zachować drożne przejścia.
 - [ ] T12: Zapisać źródła i licencje użytych zewnętrznych zasobów oraz wymagane informacje o licencji silnika.
 
 Odbiór: pomieszczenia mają rozpoznawalne funkcje i spójny wygląd, wyposażenie nie blokuje zwiedzania.
