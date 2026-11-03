@@ -1,0 +1,64 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Material" path="res://assets/materials/oak.tres" id="oak"]
+
+[ext_resource type="Material" path="res://assets/materials/linen.tres" id="linen"]
+
+[ext_resource type="Material" path="res://assets/materials/sage.tres" id="sage"]
+
+[ext_resource type="Material" path="res://assets/materials/ceramic.tres" id="ceramic"]
+
+[ext_resource type="Material" path="res://assets/materials/metal.tres" id="metal"]
+
+[ext_resource type="Material" path="res://assets/materials/stone.tres" id="stone"]
+
+[sub_resource type="BoxMesh" id="m0"]
+size = Vector3(0.6, 0.65, 1.2)
+material = ExtResource("oak")
+
+[sub_resource type="BoxMesh" id="m1"]
+size = Vector3(0.65, 0.08, 1.24)
+material = ExtResource("ceramic")
+
+[sub_resource type="BoxMesh" id="m2"]
+size = Vector3(0.4, 0.04, 0.65)
+material = ExtResource("stone")
+
+[sub_resource type="BoxMesh" id="m3"]
+size = Vector3(0.04, 0.25, 0.04)
+material = ExtResource("metal")
+
+[sub_resource type="BoxMesh" id="m4"]
+size = Vector3(0.03, 0.03, 0.4)
+material = ExtResource("metal")
+
+[sub_resource type="BoxShape3D" id="body_shape"]
+size = Vector3(0.65, 0.8, 1.24)
+
+[node name="vanity" type="Node3D"]
+
+[node name="Cabinet" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.35, 0)
+mesh = SubResource("m0")
+
+[node name="Top" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.71, 0)
+mesh = SubResource("m1")
+
+[node name="Basin" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.76, 0)
+mesh = SubResource("m2")
+
+[node name="Tap" type="MeshInstance3D" parent="."]
+position = Vector3(0.2, 0.86, 0)
+mesh = SubResource("m3")
+
+[node name="Handle" type="MeshInstance3D" parent="."]
+position = Vector3(-0.32, 0.5, 0)
+mesh = SubResource("m4")
+
+[node name="Body" type="StaticBody3D" parent="." groups=["furniture_collision"]]
+
+[node name="Shape" type="CollisionShape3D" parent="Body"]
+position = Vector3(0, 0.4, 0)
+shape = SubResource("body_shape")
